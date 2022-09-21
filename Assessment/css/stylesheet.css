@@ -1,0 +1,317 @@
+body {
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Montserrat';
+    color: #717171;
+}
+
+
+/* Navigation */
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding-left: 2rem;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Share Tech Mono';
+    font-weight: 900;
+}
+
+.topnav a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav-right {
+    float: right;
+    padding-right: 2rem;
+}
+
+.cart {
+    height: 1.2rem;
+}
+
+/* Products */
+
+#products {
+    background-color: #efefef;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background: #24db1b;
+    background-image: -webkit-linear-gradient(top, #24db1b, #35a824);
+    background-image: -moz-linear-gradient(top, #24db1b, #35a824);
+    background-image: -ms-linear-gradient(top, #24db1b, #35a824);
+    background-image: -o-linear-gradient(top, #24db1b, #35a824);
+    background-image: linear-gradient(to bottom, #24db1b, #35a824);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+.card button:hover {
+    background: #00e1ff;
+    background-image: -webkit-linear-gradient(top, #7a7a7a, #4e4e4e);
+    background-image: -moz-linear-gradient(top, #7a7a7a, #4e4e4e);
+    background-image: -ms-linear-gradient(top, #7a7a7a, #4e4e4e);
+    background-image: -o-linear-gradient(top, #7a7a7a, #4e4e4e);
+    background-image: linear-gradient(to bottom, #7a7a7a, #4e4e4e);
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+}
+
+.row {
+    margin: 0 -5px;
+    padding-top: 1rem;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+        width: 33%;
+        display: block;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 50%;
+        display: block;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 100px;
+    }
+}
+
+
+/* CSS for Carousel */
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: lightgray;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#cart {
+    background-color: #efefef;
+}
+
+.cart-container {
+    background-color: white;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+#emptycart {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 15px;
+    background: #e61212;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-style: none;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#emptycart:hover {
+    background: #f27b7b;
+    text-decoration: none;
+}
+
+#checkout {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 15px;
+    background: #126ee6;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-style: none;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#checkout:hover {
+    background: #7baff2;
+    text-decoration: none;
+}
+
+.carttitle {
+    padding-top: 3rem;
+}
+
+.rightalign {
+    text-align: right;
+}
+
+.leftalign {
+    text-align: left;
+}
+
+#carttable {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+#footer
+{
+    background-color: #efefef;
+    padding: 1%;
+    font-size: 0.8rem;
+    text-align: left;
+    vertical-align: bottom;
+}
