@@ -17,9 +17,6 @@ p {
     color: #717171;
 }
 
-
-/* Navigation */
-
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -55,8 +52,6 @@ p {
 .cart {
     height: 1.2rem;
 }
-
-/* Products */
 
 #products {
     background-color: #efefef;
@@ -148,26 +143,20 @@ p {
     }
 }
 
-
-/* CSS for Carousel */
-
 * {
     box-sizing: border-box
 }
 
-/* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
     display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -184,7 +173,6 @@ p {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -195,13 +183,11 @@ p {
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -218,7 +204,6 @@ p {
     background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
